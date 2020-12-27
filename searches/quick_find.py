@@ -3,14 +3,15 @@ Algorithm to find and output linked joints.
 Explanation found here https://ducmanhphan.github.io/2019-03-20-Quick-Union/
 """
 import random
-
 from typing import List, Tuple
 
 
 class QuickUnion:
     """Class with methods to perform a quick union on a 2D list. Uses N array access."""
 
-    def __init__(self, *, connections_len: int = 0, connections: List[Tuple[int, int]] = None) -> None:
+    def __init__(
+        self, *, connections_len: int = 0, connections: List[Tuple[int, int]] = None
+    ) -> None:
         """
         Accepts either a 2D list of connections or an int connections_len.
 
